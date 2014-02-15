@@ -22,3 +22,14 @@ Included plugins:
 * tagline
 
 Most of them are git repos themselves, except for the tagline plugin.
+
+Keybinds
+========
+
+<F8> : toggle sidebar with taglist and nerdtree
+<F9> : update taglist
+
+Commands
+========
+
+:TT : same as <F8>
