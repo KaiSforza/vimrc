@@ -20,6 +20,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
+Bundle 'majutsushi/tagbar'
 " }}}
 
 set backspace=2         "backspace over everything
@@ -109,6 +110,10 @@ let g:ycm_extra_conf_globlist = [ '~/git/KaiSforza/*', '*' ]
 let g:ycm_filetype_blacklist = { 'python' : 1 }
 " }}}
 
+" Tagbar {{{
+let g:tagbar_autofocus = 0
+let g:tagbar_left = 1
+" }}}
 
 set backup              " keep a backup file
 set history=50          " keep 50 lines of command line history
