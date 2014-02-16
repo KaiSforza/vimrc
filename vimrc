@@ -12,13 +12,14 @@ set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,~/.vim/bundle/vundle
 " {{{
 call vundle#rc()
 " let Vundle manage Vundle
-" " " required! 
+" " " required!
 Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'klen/python-mode'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
 Bundle 'jmcantrell/vim-virtualenv'
+Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
 " }}}
 
 set backspace=2         "backspace over everything
