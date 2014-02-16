@@ -21,6 +21,7 @@ Bundle 'bling/vim-airline'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
 Bundle 'majutsushi/tagbar'
+Bundle 'tpope/vim-fugitive'
 " }}}
 
 set backspace=2         "backspace over everything
@@ -101,7 +102,8 @@ let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:airline_symbols.linenr = '¶'
 "let g:airline_symbols.paste = 'ρ'
-"let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_symbols.branch = 'µ'
 
 " }}}
 
