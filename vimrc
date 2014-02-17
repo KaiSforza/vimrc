@@ -75,6 +75,9 @@ let g:netrw_silent=1
 let g:clang_library_path = "/usr/lib"
 let g:clang_auto_select = 1
 let g:tar_cmd = 'bsdtar'
+let g:zip_unzipcmd = 'bsdtar'
+let g:zip_unzipflag = 'Ptf'
+let g:zip_readflags = 'OPxf'
 " }}}
 
 "pymode {{{
