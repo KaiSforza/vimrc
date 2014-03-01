@@ -117,7 +117,7 @@ let g:ycm_filetype_blacklist = { 'python' : 1 }
 
 " Tagbar {{{
 let g:tagbar_autofocus = 0
-let g:tagbar_left = 1
+let g:tagbar_left = 0
 " }}}
 
 set backup              " keep a backup file
