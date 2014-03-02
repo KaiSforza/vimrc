@@ -89,10 +89,6 @@ let g:pymode_rope_completion = 1
 let g:pymode_rope_complete_on_dot = 0
 "}}}
 
-" virtualenv settings {{{
-let g:virtualenv_auto_activate = 1
-" }}}
-
 " airline settings {{{
 let g:airline_powerline_fonts = 0
 
