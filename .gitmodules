@@ -1,9 +1,6 @@
 [submodule "bundle/vundle"]
 	path = bundle/vundle
 	url = git://github.com/gmarik/vundle.git
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = git://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = git://github.com/klen/python-mode.git
