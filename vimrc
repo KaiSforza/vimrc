@@ -1,4 +1,6 @@
-let $PYTHONPATH="/usr/lib/python3.3/site-packages"
+" We need to use python 3 for our stuff
+let $PYTHONPATH="/usr/lib/python3.4/site-packages"
+" Basic configurations
 set nocompatible
 set encoding=utf-8
 
@@ -7,9 +9,11 @@ set encoding=utf-8
 " File Detection
 filetype plugin indent on
 syntax on
+
+" Use these directories for runtime stuff (plugins, etc.)
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,~/.vim/bundle/vundle
 
-" {{{
+" Vundle {{{
 call vundle#rc()
 " let Vundle manage Vundle
 " " " required!
@@ -23,8 +27,12 @@ Bundle 'majutsushi/tagbar'
 Bundle 'tpope/vim-fugitive'
 " }}}
 
+" Input
 set backspace=2         "backspace over everything
+
+" Visual
 set fcs=vert:│,fold:-   " solid instead of broken line for vert splits
+set nowrap
 set hidden              " hide when switching buffers, don't unload
 set laststatus=2
 set mouse=a             " enable mouse in all modes
@@ -32,10 +40,12 @@ set ruler               " show the cursor position all the time
 set showcmd             " display incomplete commands
 set spelllang=en_us
 set title
+
+" Menu
 set wildmenu
 set wildmode=full
 set completeopt=menu
-set nowrap
+set history=50          " keep 50 lines of command line history
 
 " folding
 set foldignore=
@@ -57,10 +67,11 @@ set incsearch
 set ignorecase
 set smartcase
 
-" Status line
-"set statusline=%<%F\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+" Files
+set backup              " keep a backup file
+set number              " display line numbers
 
-" }}}
+
 " LaTeX Suite {{{
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor="latex"
@@ -68,15 +79,21 @@ let g:Tex_ViewRule_dvi = 'xdvi'
 " }}}
 
 " From gtmanfred {{{
+" " Netrw {{{
 let g:netrw_http_cmd='curl -sL'
 let g:netrw_http_xcmd='-o'
 let g:netrw_silent=1
+" " }}}
+" " Clang {{{
 let g:clang_library_path = "/usr/lib"
 let g:clang_auto_select = 1
+" " }}}
+" " Compression {{{
 let g:tar_cmd = 'bsdtar'
 let g:zip_unzipcmd = 'bsdtar'
 let g:zip_unzipflag = 'Ptf'
 let g:zip_readflags = 'OPxf'
+" " }}}
 " }}}
 
 "pymode {{{
@@ -91,7 +108,6 @@ let g:pymode_rope_complete_on_dot = 0
 " airline settings {{{
 let g:airline_powerline_fonts = 0
 
-
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
@@ -102,7 +118,6 @@ let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_symbols.branch = 'µ'
-
 " }}}
 
 " YCM {{{
@@ -114,10 +129,6 @@ let g:ycm_filetype_blacklist = { 'python' : 1 }
 let g:tagbar_autofocus = 0
 let g:tagbar_left = 0
 " }}}
-
-set backup              " keep a backup file
-set history=50          " keep 50 lines of command line history
-set number              " display line numbers
 
 "Color scheme
 set background=dark
