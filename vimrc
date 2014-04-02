@@ -17,14 +17,14 @@ set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,~/.vim/bundle/vundle
 call vundle#rc()
 " let Vundle manage Vundle
 " " " required!
-Bundle 'gmarik/vundle'
-Bundle 'klen/python-mode'
-Bundle 'scrooloose/nerdtree'
-Bundle 'bling/vim-airline'
-Bundle 'jmcantrell/vim-virtualenv'
-Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
-Bundle 'majutsushi/tagbar'
-Bundle 'tpope/vim-fugitive'
+Plugin 'gmarik/vundle'
+Plugin 'klen/python-mode'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
+Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-fugitive'
 " }}}
 
 " Input
