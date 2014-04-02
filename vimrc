@@ -68,7 +68,8 @@ set ignorecase
 set smartcase
 
 " Files
-set backup              " keep a backup file
+set nobackup            " don't keep a backup file during editing
+set nowritebackup       " don't save the backup file
 set number              " display line numbers
 
 
