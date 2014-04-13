@@ -40,6 +40,7 @@ set ruler               " show the cursor position all the time
 set showcmd             " display incomplete commands
 set spelllang=en_us
 set title
+set linebreak           " break lines on word-boundaries
 
 " Menu
 set wildmenu
@@ -197,10 +198,12 @@ if version >= 703
         \ foldtext=substitute(getline(v:foldstart),'\\t','\ \ \ \ ','g')
   set colorcolumn=76
   hi ColorColumn ctermbg=1 guibg=1
+  au BufNewFile,BufRead *vimperator-* set tw=0 wrap colorcolumn=0
 else
   autocmd FileType text setlocal textwidth=78
   au FileType python setlocal tabstop=4 expandtab shiftwidth=4
         \ softtabstop=4 textwidth=79 sh=ipython3
+  au BufNewFile,BufRead *vimperator-* set tw=0 wrap
 endif "}}}
 
 "au FileType java setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
