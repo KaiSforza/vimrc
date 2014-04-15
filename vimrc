@@ -25,7 +25,10 @@ Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
-Plugin 'Shougo/neocomplete.vim'
+
+if version >= 703
+  Plugin 'Shougo/neocomplete.vim'
+endif
 " }}}
 
 " Input
