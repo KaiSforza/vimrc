@@ -228,3 +228,4 @@ au BufNewFile,BufRead *.asm set tabstop=4 expandtab shiftwidth=4
       \ softtabstop=4
 au FileType haskell setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
+" vim: foldmethod=marker :
