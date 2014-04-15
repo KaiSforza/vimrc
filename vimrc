@@ -206,9 +206,9 @@ else
   au BufNewFile,BufRead *vimperator-* set tw=0 wrap
 endif "}}}
 
-"au FileType java setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
-"au FileType java set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
-"au FileType java set makeprg=/usr/bin/javac\ -d\ ../bin\ %
+au FileType java set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au FileType java set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
+au FileType java set makeprg=/usr/bin/javac\ %
 au FileType PKGBUILD set makeprg=/usr/bin/makepkg
 
 au BufNewFile,BufRead *.t2t set ft=txt2tags
