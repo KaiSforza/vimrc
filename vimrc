@@ -204,7 +204,7 @@ if version >= 703
   autocmd FileType text setlocal textwidth=78 colorcolumn=78
   au FileType python setlocal tabstop=4 expandtab shiftwidth=4
         \ softtabstop=4 textwidth=79  colorcolumn=79
-        \ foldtext=substitute(getline(v:foldstart),'\\t','\ \ \ \ ','g')
+        \ omnifunc=pythoncomplete#Complete
   set colorcolumn=76
   hi ColorColumn ctermbg=1 guibg=1
   au BufNewFile,BufRead *vimperator-* set tw=0 wrap colorcolumn=0
