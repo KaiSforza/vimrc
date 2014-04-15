@@ -25,6 +25,7 @@ Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
+Plugin 'Shougo/neocomplete.vim'
 " }}}
 
 " Input
@@ -127,6 +128,14 @@ let g:ycm_extra_conf_globlist = [ '~/git/KaiSforza/*', '*' ]
 let g:ycm_filetype_blacklist = { 'python' : 1 }
 " }}}
 
+" neocomplete.vim {{{
+let g:neocomplete#enable_at_startup = 1
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
+endif
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" }}}
+
 " Tagbar {{{
 let g:tagbar_autofocus = 0
 let g:tagbar_left = 0
@@ -203,6 +212,7 @@ else
   autocmd FileType text setlocal textwidth=78
   au FileType python setlocal tabstop=4 expandtab shiftwidth=4
         \ softtabstop=4 textwidth=79 sh=ipython3
+        \ omnifunc=pythoncomplete#Complete
   au BufNewFile,BufRead *vimperator-* set tw=0 wrap
 endif "}}}
 
