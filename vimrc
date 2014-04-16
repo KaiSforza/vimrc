@@ -49,7 +49,7 @@ set shortmess=filnxtToOI
 " Menu
 set wildmenu
 set wildmode=full
-set completeopt=menu
+set completeopt=menuone
 set history=50          " keep 50 lines of command line history
 
 " folding
@@ -137,6 +137,7 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
 endif
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
 " }}}
 
 " Tagbar {{{
