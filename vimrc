@@ -44,6 +44,7 @@ set showcmd             " display incomplete commands
 set spelllang=en_us
 set title
 set linebreak           " break lines on word-boundaries
+set shortmess=filnxtToOI
 
 " Menu
 set wildmenu
