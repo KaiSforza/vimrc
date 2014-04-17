@@ -76,6 +76,8 @@ set smartcase
 set nobackup            " don't keep a backup file during editing
 set nowritebackup       " don't save the backup file
 set number              " display line numbers
+"set directory=".,~/tmp,/var/tmp,/tmp"
+set directory=~/.vim/swap//,.,~/tmp,/var/tmp,/tmp,$TEMP
 
 
 " LaTeX Suite {{{
