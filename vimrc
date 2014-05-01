@@ -7,14 +7,15 @@ set encoding=utf-8
 " Settings {{{
 "-------------------------------------------------
 " File Detection
-filetype plugin indent on
 syntax on
 
 " Use these directories for runtime stuff (plugins, etc.)
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,~/.vim/bundle/vundle
 
 " Vundle {{{
-call vundle#rc()
+filetype off
+
+call vundle#begin()
 " let Vundle manage Vundle
 " " " required!
 Plugin 'gmarik/vundle'
@@ -28,6 +29,9 @@ Plugin 'tpope/vim-fugitive'
 if version >= 703
   Plugin 'Shougo/neocomplete.vim'
 endif
+call vundle#end()
+
+filetype plugin indent on
 " }}}
 
 " Input
