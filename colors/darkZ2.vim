@@ -15,8 +15,8 @@ hi SpecialKey   ctermfg=red
 hi NonText      ctermfg=darkblue
 hi Directory    ctermfg=darkcyan
 hi ErrorMsg     ctermfg=7         ctermbg=1
-hi IncSearch    cterm=NONE          ctermfg=yellow    ctermbg=green
-hi Search       cterm=NONE          ctermfg=white     ctermbg=grey
+hi IncSearch    cterm=NONE          ctermfg=white ctermbg=Blue
+hi Search       cterm=NONE          ctermfg=black ctermbg=lightgrey
 hi MoreMsg      ctermfg=darkgreen
 hi ModeMsg      cterm=NONE          ctermfg=brown
 hi LineNr       ctermfg=3
@@ -25,7 +25,7 @@ hi StatusLine   cterm=reverse
 hi StatusLineNC cterm=reverse
 hi VertSplit    cterm=reverse
 hi Title        ctermfg=5
-hi Visual       cterm=reverse
+hi Visual       cterm=reverse       ctermbg=black
 hi VisualNOS    cterm=underline
 hi WarningMsg   ctermfg=1
 hi WildMenu     ctermfg=0           ctermbg=3
