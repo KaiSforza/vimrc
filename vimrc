@@ -116,6 +116,8 @@ let g:pymode_rope_show_doc_bind = 'K'
 let g:pymode_rope_completion = 1
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_trim_whitespaces = 0
+let g:pymode_lint_checkers = ['pylint', 'pyflakes', 'pep8']
+let g:pymode_lint_cwindow = 1
 "}}}
 
 " airline settings {{{
