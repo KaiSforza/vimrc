@@ -239,6 +239,7 @@ au BufNewFile,BufRead *.md  set ft=markdown tw=76
 au BufNewFile,BufRead *.rst set tw=76
 au BufNewFile,BufRead *.asm set tabstop=4 expandtab shiftwidth=4
       \ softtabstop=4
+au BufNewFile,BufRead /tmp/manpages/** set ft=man
 au FileType haskell setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 " vim: foldmethod=marker :
