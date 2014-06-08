@@ -44,8 +44,10 @@ work::
 Keybinds
 ========
 
-* <F8> : toggle sidebar with taglist and nerdtree
-* <F9> : update taglist
+* ``<F8>``: toggle sidebar with taglist and nerdtree
+* ``<F9>``: update taglist
+* ``bt``: go to next buffer (similar to ``gt``)
+* ``bT``: go to next buffer (similar to ``gT``)
 
 Commands
 ========
