@@ -178,6 +178,10 @@ let NERDTreeMinimaLUI = 0
 com TT NERDTreeToggle | TlistToggle
 nnoremap <silent> <F8> :TT<CR>
 
+" Buffer navigtion like tab navigation
+nnoremap <silent> bt :bnext<CR>
+nnoremap <silent> bT :bprevious<CR>
+
 " PDF Stuff
 "command Rpdf :r !pdftotext -nopgbrk <q-args> -
 " Don't use Ex mode, use Q for formatting
