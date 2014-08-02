@@ -18,17 +18,22 @@ filetype off
 call vundle#begin()
 " let Vundle manage Vundle
 " " " required!
+"
+if has('python') == 1 || has('python3') == 1
+  Plugin 'klen/python-mode'
+endif
+
 Plugin 'gmarik/vundle'
-Plugin 'klen/python-mode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 
-if version >= 703
+if version >= 703 && has('lua') == 1
   Plugin 'Shougo/neocomplete.vim'
 endif
+
 call vundle#end()
 
 filetype plugin indent on
@@ -109,7 +114,11 @@ let g:zip_readflags = 'OPxf'
 " }}}
 
 "pymode {{{
-let g:pymode_python = 'python3'
+if has('python3') == 1
+  let g:pymode_python = 'python3'
+else
+  let g:pymode_python = 'python'
+endif
 let g:pymode_folding = 1
 let g:pymode_doc = 1
 let g:pymode_rope_show_doc_bind = 'K'
@@ -243,7 +252,6 @@ au BufNewFile,BufRead *.md  set ft=markdown tw=76
 au BufNewFile,BufRead *.rst set tw=76
 au BufNewFile,BufRead *.asm set tabstop=4 expandtab shiftwidth=4
       \ softtabstop=4
-au BufNewFile,BufRead /tmp/manpages/** set ft=man
 au FileType haskell setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 " vim: foldmethod=marker :
