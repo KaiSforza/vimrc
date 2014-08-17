@@ -52,4 +52,4 @@ Keybinds
 Commands
 ========
 
-* :TT : same as <F8>
+* ``:TT`` : same as <F8>
