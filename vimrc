@@ -70,10 +70,10 @@ set fdc=2
 " Tabs
 set autoindent
 set expandtab
-set shiftwidth=2        " Num of spaces to use for each (auto)indent.
+set shiftwidth=4        " Num of spaces to use for each (auto)indent.
 set smarttab
-set softtabstop=2
-set tabstop=2
+set softtabstop=4
+set tabstop=4
 
 " Search
 set hlsearch
