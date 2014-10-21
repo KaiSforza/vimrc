@@ -11,10 +11,12 @@ endif
 "set cursorline
 let g:colors_name="darkZ2"
 
+hi Normal		guifg=white			guibg=black
+
 hi SpecialKey   ctermfg=red
 hi NonText      ctermfg=darkblue
 hi Directory    ctermfg=darkcyan
-hi ErrorMsg     ctermfg=7         ctermbg=1
+hi ErrorMsg     ctermfg=white         ctermbg=red
 hi IncSearch    cterm=NONE          ctermfg=white ctermbg=Blue
 hi Search       cterm=NONE          ctermfg=black ctermbg=lightgrey
 hi MoreMsg      ctermfg=darkgreen
@@ -27,14 +29,14 @@ hi VertSplit    cterm=reverse
 hi Title        ctermfg=5
 hi Visual       cterm=reverse       ctermbg=black
 hi VisualNOS    cterm=underline
-hi WarningMsg   ctermfg=1
+hi WarningMsg   ctermfg=red
 hi WildMenu     ctermfg=0           ctermbg=3
 hi Folded       ctermfg=darkgrey    ctermbg=NONE
 hi FoldColumn   ctermfg=darkgrey    ctermbg=NONE
 hi DiffAdd      ctermbg=darkcyan    ctermfg=black
 hi DiffChange   ctermbg=black       ctermfg=darkcyan
 hi DiffDelete   ctermfg=4         ctermbg=6
-hi DiffText     ctermbg=1
+hi DiffText     ctermbg=red
 
 hi Comment      ctermfg=darkgrey
 hi Constant     ctermfg=9
@@ -46,5 +48,4 @@ hi PreProc      ctermfg=lightblue
 hi Type         ctermfg=2
 hi Underlined   cterm=underline     ctermfg=5
 hi Ignore       ctermfg=darkgrey
-hi Error        ctermfg=7         ctermbg=1
-
+hi Error        ctermfg=white         ctermbg=red

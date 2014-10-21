@@ -88,6 +88,9 @@ set number              " display line numbers
 "set directory=".,~/tmp,/var/tmp,/tmp"
 set directory=~/.vim/swap//,.,~/tmp,/var/tmp,/tmp,$TEMP
 
+" GUI stuff
+set guioptions=
+
 
 " LaTeX Suite {{{
 set grepprg=grep\ -nH\ $*
@@ -232,7 +235,7 @@ if version >= 703
         \ softtabstop=4 textwidth=79  colorcolumn=79
         \ omnifunc=pythoncomplete#Complete
   set colorcolumn=76
-  hi ColorColumn ctermbg=1 guibg=1
+  hi ColorColumn ctermbg=1 guibg=red
   au BufNewFile,BufRead *vimperator-* set tw=0 wrap colorcolumn=0
 else
   autocmd FileType text setlocal textwidth=78
