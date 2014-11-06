@@ -203,6 +203,9 @@ map Q gq
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
 au!
