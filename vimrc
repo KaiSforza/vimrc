@@ -1,5 +1,5 @@
 " We need to use python 3 for our stuff
-let $PYTHONPATH="/usr/lib/python3.4/site-packages"
+"let $PYTHONPATH="/usr/lib/python3.4/site-packages"
 " Basic configurations
 set nocompatible
 set encoding=utf-8
