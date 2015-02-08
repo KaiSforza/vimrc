@@ -202,6 +202,11 @@ map Q gq
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
+" Paste remaps
+nnoremap <silent> <Leader>pp "+p
+nnoremap <silent> <Leader>Pp "+P
+nnoremap <silent> <Leader>pP "*p
+nnoremap <silent> <Leader>PP "*P
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
