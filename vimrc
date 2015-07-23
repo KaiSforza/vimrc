@@ -29,6 +29,7 @@ Plugin 'bling/vim-airline'
 Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
+Plugin 'raichoo/haskell-vim'
 
 if version >= 703 && has('lua') == 1
   Plugin 'Shougo/neocomplete.vim'
@@ -38,6 +39,13 @@ call vundle#end()
 
 filetype plugin indent on
 " }}}
+
+" Local vimrc files
+set exrc
+set secure
+
+set undodir=~/.vim/swap//,.,~/tmp,/var/tmp,/tmp,$TEMP
+set undofile
 
 " Input
 set backspace=2         "backspace over everything
@@ -164,6 +172,7 @@ inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
 " Tagbar {{{
 let g:tagbar_autofocus = 0
 let g:tagbar_left = 0
+let g:tagbar_ctags_bin= "~/.nix-profile/bin/ctags"
 " }}}
 
 "Color scheme
@@ -182,6 +191,7 @@ let Tlist_Enable_Fold_Column = 0
 let tlist_PKGBUILD_settings='sh;f:function'
 " Simple patch to tlist to allow using it as a split window
 let Tlist_Use_Split_Window = 1
+let Tlist_Ctags_Cmd = "~/.nix-profile/bin/ctags"
 
 " Nerdtree mappings
 let NERDTreeMinimaLUI = 0
